@@ -1,0 +1,20 @@
+@use '/src/sass/base/mixins.scss' as *;
+
+.title-h1-italic {
+  @include title;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .title-h1-italic {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .title-h1-italic {
+    font-size: 32px;
+  }
+}

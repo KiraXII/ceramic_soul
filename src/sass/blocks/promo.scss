@@ -1,0 +1,91 @@
+@use '/src/sass/base/mixins.scss' as *;
+
+.promo {
+  position: relative;
+  padding-top: 50px;
+  &__wrapper {
+    margin-top: 50px;
+  }
+  &__cta {
+    margin-top: 40px;
+  }
+  &__img {
+    width: 270px;
+    height: 377px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+  }
+  &__title {
+    padding: 0 5px;
+  }
+  &__btn {
+    margin: 18px auto 0 auto;
+  }
+  &__potter {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .promo {
+    &__img {
+      width: 230px;
+      height: 321px;
+    }
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    &__cta {
+      margin-top: 0;
+    }
+    &__title {
+      margin-bottom: 81px;
+      padding-left: 71px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .promo {
+    &__potter {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 450px;
+      height: 633px;
+    }
+    &__title {
+      margin-right: 0;
+      padding-right: 10px;
+    }
+    &__wrapper {
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .promo {
+    padding-top: 40px;
+    &__img {
+      width: 330px;
+      height: 460px;
+    }
+    &__title {
+      padding-right: 30px;
+    }
+    &__btn {
+      margin-top: 50px;
+    }
+    &__potter {
+      width: 640px;
+      height: 900px;
+    }
+    &__wrapper {
+      margin-top: 79px;
+    }
+  }
+}

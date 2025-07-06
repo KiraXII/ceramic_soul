@@ -9,10 +9,11 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "postcss-pxtorem": "^6.1.0",
     "sass": "^1.89.2",
     "vite": "^7.0.2"
   },
   "dependencies": {
-    "postcss-pxtorem": "^6.1.0"
+    "purecss": "^3.0.0"
   }
 }

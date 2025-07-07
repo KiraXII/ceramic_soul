@@ -1,7 +1,7 @@
 @use '/src/sass/base/variables.scss' as *;
 
 .works {
-  padding: 60px 0;
+  padding-top: 60px;
   &__wrapper {
     position: relative;
   }
@@ -21,6 +21,7 @@
   }
   .swiper-pagination {
     position: relative;
+    margin-top: 25px;
     bottom: 0;
     top: 0;
   }
@@ -95,7 +96,7 @@
 
 @media screen and (min-width: 1920px) {
   .works {
-    padding: 100px 0;
+    padding-top: 100px;
     &__img {
       width: 100%;
     }

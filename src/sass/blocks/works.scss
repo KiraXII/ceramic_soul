@@ -1,0 +1,118 @@
+@use '/src/sass/base/variables.scss' as *;
+
+.works {
+  padding: 60px 0;
+  &__wrapper {
+    position: relative;
+  }
+  &__slider {
+    margin-top: 40px;
+    &-nav {
+      display: none;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper-pagination {
+    position: relative;
+    bottom: 0;
+    top: 0;
+  }
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+    background: $dark;
+    opacity: 1;
+    margin: 0 6px;
+  }
+  .swiper-pagination-bullet-active {
+    background: $ceramic;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .works {
+    &__slider {
+      margin-top: 45px;
+    }
+    &__img {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .works {
+    &__slider {
+      margin: 80px 40px 0 40px;
+      &-nav {
+        position: absolute;
+        display: block;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $dark;
+        font-size: 18px;
+        border: none;
+        background: transparent;
+        &:before {
+          width: auto;
+          margin: 0;
+        }
+      }
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: block;
+      color: $dark;
+      &:after {
+        width: 9px;
+        height: 22px;
+      }
+    }
+
+    .swiper-pagination {
+      margin-top: 20px;
+    }
+
+    .icon-left {
+      left: 8px;
+    }
+
+    .icon-right {
+      right: 8px;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .works {
+    padding: 100px 0;
+    &__img {
+      width: 100%;
+    }
+
+    &__slider {
+      margin: 80px 85px 0 85px;
+      &-nav {
+        font-size: 26px;
+      }
+    }
+
+    .icon-left {
+      left: 28px;
+    }
+
+    .icon-right {
+      right: 28px;
+    }
+  }
+}

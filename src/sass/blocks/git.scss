@@ -2,6 +2,7 @@
 
 .git {
   margin-top: 60px;
+  position: relative;
 
   &__wrapper {
     margin-top: 60px;
@@ -145,6 +146,9 @@
     &__fieldset {
       display: flex;
       gap: 45px;
+    }
+    &__icon {
+      right: 40px;
     }
   }
 }

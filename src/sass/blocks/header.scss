@@ -33,7 +33,7 @@
     padding: 50px 10px;
     background-color: $light;
     transition: transform 500ms;
-
+    z-index: 1000;
     &_active {
       transform: translateX(100%);
     }

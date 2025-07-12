@@ -20,3 +20,24 @@
   display: block;
   cursor: pointer;
 }
+
+@mixin angle-decoration {
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: #000;
+    top: 0;
+    left: 0;
+  }
+  &::before {
+    content: '';
+    width: 200px;
+    height: 1px;
+  }
+  &::after {
+    content: '';
+    width: 1px;
+    height: 200px;
+  }
+}

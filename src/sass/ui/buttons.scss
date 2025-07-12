@@ -32,6 +32,16 @@
   }
 }
 
+.btn-read {
+  @include button;
+  border: 1px solid $dark;
+  border-radius: 2px;
+  padding: 7px 10px;
+  min-width: 145px;
+  min-height: 32px;
+  font-size: 16px;
+}
+
 @media screen and (min-width: 1280px) {
   .btn-default {
     &:hover {
@@ -47,6 +57,16 @@
   }
 
   .btn-send {
+    &:hover {
+      border: 1px solid $ceramic;
+      color: $ceramic;
+    }
+    &:active {
+      border: 1px solid $ceramic;
+      color: $dark;
+    }
+  }
+  .btn-read {
     &:hover {
       border: 1px solid $ceramic;
       color: $ceramic;

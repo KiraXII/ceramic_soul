@@ -50,37 +50,22 @@ try {
 } catch (e) {}
 
 try {
-  // const tabs = document.querySelector('.catalog__tab');
-  // const contents = document.querySelector('.catalog__content-item');
-  // tabs.forEach((tab, index) => {
-  //   tab.addEventListener('click', () => {
-  //     //удаляем активный класс у всех табов и контента
-  //     tabs.forEach((t) => t.classList.remove('catalog__tab_active'));
-  //     contents.forEach((c) => (c.style.display = 'none'));
-  //     // добавляем активный класс к нажатому табу и показываем соответствующий контент
-  //     tab.classList.add('.catalog__tab_active');
-  //     contents[index].style.display = 'block';
-  //   });
-  // });
-  // //показываем первый контент при загрузке
-  // contents.forEach((c, i) => (c.style.display = i === 0 ? 'block' : 'none'));
-} catch (e) {}
+  const tabs = document.querySelectorAll('.catalog__tab');
+  const contents = document.querySelectorAll('.catalog__content__wrapper');
 
-const tabs = document.querySelectorAll('.catalog__tab');
-const contents = document.querySelectorAll('.catalog__content__wrapper');
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => {
+      //удаляем активный класс у всех табов и контента
+      tabs.forEach((t) => t.classList.remove('catalog__tab_active'));
+      contents.forEach((c) => (c.style.display = 'none'));
 
-tabs.forEach((tab, index) => {
-  tab.addEventListener('click', () => {
-    //удаляем активный класс у всех табов и контента
-    tabs.forEach((t) => t.classList.remove('catalog__tab_active'));
-    contents.forEach((c) => (c.style.display = 'none'));
-
-    // добавляем активный класс к нажатому табу и показываем соответствующий контент
-    tab.classList.add('catalog__tab_active');
-    contents[index].style.display = 'block';
+      // добавляем активный класс к нажатому табу и показываем соответствующий контент
+      tab.classList.add('catalog__tab_active');
+      contents[index].style.display = 'block';
+    });
   });
-});
 
-//показываем первый контент при загрузке
+  //показываем первый контент при загрузке
 
-contents.forEach((c, i) => (c.style.display = i === 0 ? 'block' : 'none'));
+  contents.forEach((c, i) => (c.style.display = i === 0 ? 'block' : 'none'));
+} catch (e) {}

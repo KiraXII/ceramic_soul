@@ -1,0 +1,29 @@
+@use '/src/sass/base/variables.scss' as *;
+
+.git {
+  input:focus.just-validate-error-field,
+  input:hover.just-validate-error-field,
+  textarea:hover.just-validate-error-field,
+  textarea:focus.just-validate-error-field {
+    outline: 1px solid $ui-error;
+  }
+  input:focus.git__checkbox,
+  input:hover.git__checkbox {
+    border-color: $ui-error;
+    outline: none;
+  }
+  .just-validate-error-field {
+    border: 1px solid $ui-error;
+  }
+}
+
+.footer {
+  .just-validate-error-field::placeholder,
+  .just-validate-error-label {
+    color: $ui-error;
+  }
+  &__input.just-validate-error-field {
+    color: $ui-error;
+    border-bottom-color: $ui-error;
+  }
+}

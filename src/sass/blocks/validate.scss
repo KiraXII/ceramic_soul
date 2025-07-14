@@ -15,15 +15,33 @@
   .just-validate-error-field {
     border: 1px solid $ui-error;
   }
-}
-
-.footer {
-  .just-validate-error-field::placeholder,
   .just-validate-error-label {
     color: $ui-error;
   }
-  &__input.just-validate-error-field {
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus {
+    -webkit-text-fill-color: $dark;
+    -webkit-box-shadow: 0 0 0px 40rem #fff inset;
+  }
+}
+
+.footer {
+  .just-validate-error-field::placeholder {
     color: $ui-error;
+  }
+
+  .just-validate-error-label {
+    margin-top: 5px;
+    color: $ui-error;
+  }
+  &__input.just-validate-error-field {
     border-bottom-color: $ui-error;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus {
+    -webkit-text-fill-color: $light;
+    -webkit-box-shadow: 0 0 0px 40rem $dark inset;
   }
 }

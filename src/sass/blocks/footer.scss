@@ -16,20 +16,31 @@
   }
   &__input {
     display: block;
-    margin-top: 40px;
+    // margin-top: 40px;
+    margin-top: 25px;
     border: none;
     border-bottom: 1px solid $ui-active;
     background-color: transparent;
     outline: none;
     color: $light;
     width: 293px;
-    height: 32px;
+    // height: 32px;
+    height: 47px;
+    overflow: auto;
     &::placeholder {
       position: absolute;
       font-weight: 400;
       font-size: 14px;
       color: $ui-active;
       bottom: 15px;
+    }
+    &:focus {
+      // margin-top: 0;
+      padding-top: 15px;
+    }
+    &:focus::placeholder {
+      transform: translateY(-10px);
+      transition: 300ms;
     }
   }
   &__check-block {

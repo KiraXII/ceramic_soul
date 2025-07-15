@@ -1,0 +1,17 @@
+@keyframes moveAndRotate {
+  0% {
+    transform: translateX(0) rotateZ(0deg);
+  }
+  25% {
+    transform: translateX(0) translateY(-130px) rotateZ(180deg);
+  }
+  50% {
+    transform: translateX(-150px) translateY(-130px) rotateZ(360deg);
+  }
+  75% {
+    transform: translateX(-150px) translateY(0) rotateZ(180deg);
+  }
+  100% {
+    transform: translateX(0) translateY(0) rotateZ(0deg);
+  }
+}

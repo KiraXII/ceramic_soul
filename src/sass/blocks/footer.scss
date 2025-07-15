@@ -88,6 +88,10 @@
         margin-top: 20px;
       }
     }
+    a {
+      text-decoration: none;
+      color: $light;
+    }
   }
   &__follow {
     margin-top: 40px;
@@ -100,6 +104,9 @@
     &__wrapper {
       display: flex;
       justify-content: space-between;
+      li {
+        list-style-type: none;
+      }
     }
     &__icon {
       display: flex;

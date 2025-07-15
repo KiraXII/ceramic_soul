@@ -23,6 +23,7 @@
     font-size: 14px;
     line-height: 200%;
     color: $dark;
+    max-width: 300px;
     a {
       margin-left: 3px;
       text-decoration: none;
@@ -132,6 +133,9 @@
       display: block;
       box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
       width: 550px;
+    }
+    &__icon {
+      animation: moveAndRotate 4s linear infinite;
     }
   }
 }
